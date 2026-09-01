@@ -1,0 +1,103 @@
+/* Fuente retro y fondo estilo escritorio vintage */
+body {
+    background-color: #2b2b36;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Título con estilo arcade / neón retro */
+h1 {
+    color: #ffcc00;
+    text-shadow: 3px 3px 0px #d83a56, 5px 5px 0px #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Tarjeta / Carcasa de la calculadora vintage */
+body > * {
+    max-width: 360px;
+}
+
+/* Etiquetas de texto */
+label {
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Entradas de números estilo pantalla digital */
+input[type="number"] {
+    background-color: #9ea786; /* Verde pantalla LCD */
+    color: #1a2414;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #555e46;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 260px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+    outline: none;
+    text-align: right;
+}
+
+/* Botones con relieve 3D clásico (Estilo botones plásticos retro) */
+button {
+    background-color: #d1d5db;
+    color: #111;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 14px;
+    margin: 4px;
+    border: 3px solid;
+    border-color: #ffffff #555 #555 #ffffff; /* Bisel 3D */
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    transition: all 0.1s ease;
+}
+
+/* Efecto al pasar el cursor */
+button:hover {
+    background-color: #ffd166;
+}
+
+/* Efecto al presionar el botón */
+button:active {
+    border-color: #555 #ffffff #ffffff #555;
+    box-shadow: 1px 1px 0px #000;
+    transform: translate(2px, 2px);
+}
+
+/* Pantalla del Resultado */
+p {
+    background-color: #8da47e; /* Verde LCD retro */
+    color: #112211;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: 4px inset #4f5f45;
+    border-radius: 6px;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5), 0 4px 10px rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#resultado {
+    color: #0b1d0b;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgba(0, 255, 0, 0.3);
+}
