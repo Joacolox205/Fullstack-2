@@ -1,0 +1,104 @@
+/* Fondo con la foto de Call of Duty y centrado general */
+body {
+    background-color: #0f1416;
+    /* Carga la imagen de fondo */
+    background-image: url('Call Of Duty.jpg'); /*[cite: 8, 10] */
+    background-size: cover;                   /* Cubre toda la pantalla */ /*[cite: 10] */
+    background-position: center;              /* Centra la imagen */ /*[cite: 10] */
+    background-repeat: no-repeat;             /* Evita que se repita */ /*[cite: 10] */
+    background-attachment: fixed;             /* Fondo fijo al hacer scroll */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Título con estilo retro / militar iluminado */
+h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 0px #000, 0 0 10px rgba(255, 204, 0, 0.7); /*[cite: 10] */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de los inputs */
+label {
+    font-weight: bold;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Entradas de números estilo pantalla LCD / militar */
+input[type="number"] {
+    background-color: rgba(30, 40, 35, 0.85); /* Fondo oscuro translúcido */
+    color: #55ff55;                          /* Verde fósforo digital */
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #557755;
+    border-radius: 4px; /*[cite: 10] */
+    padding: 8px 12px;
+    width: 260px;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-align: right;
+}
+
+/* Botones con relieve 3D clásico estilo consola/tablero retro */
+button {
+    background-color: #2e3b32;
+    color: #e2e8f0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 14px;
+    margin: 4px;
+    border: 3px solid;
+    border-color: #5a6e5a #111a13 #111a13 #5a6e5a; /* Relieve biselado 3D */
+    border-radius: 4px; /*[cite: 10] */
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+    transition: all 0.1s ease; /*[cite: 10] */
+}
+
+/* Hover de botones */
+button:hover {
+    background-color: #44594a;
+    color: #ffcc00;
+}
+
+/* Clic presionado */
+button:active {
+    border-color: #111a13 #5a6e5a #5a6e5a #111a13;
+    transform: translate(2px, 2px); /*[cite: 10] */
+}
+
+/* Pantalla del Resultado estilo terminal militar LCD */
+p {
+    background-color: rgba(10, 20, 15, 0.9);
+    color: #33ff33;                          /* Texto verde fósforo */
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: 3px inset #3b533b;
+    border-radius: 6px; /*[cite: 10] */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 255, 0, 0.2);
+    min-width: 250px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#resultado {
+    color: #72ff72;
+    font-size: 24px;
+    text-shadow: 0 0 8px rgba(50, 255, 50, 0.8);
+}
